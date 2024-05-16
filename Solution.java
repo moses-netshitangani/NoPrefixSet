@@ -31,7 +31,7 @@ class Result {
             String unseenWord = words.get(i);
 
             for (String seenWord : seen) {
-                if (unseenWord.startsWith(seenWord)) {
+                if (unseenWord.startsWith(seenWord) || seenWord.startsWith(unseenWord)) {
                     setRes = "BAD SET";
                     resWord = unseenWord;
                     break;
