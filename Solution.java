@@ -16,6 +16,7 @@ class Result {
         // Need to move forward while comparing each new word
         // against the set of already seen words
 
+        // A more efficient approach involves using TrieNode ds (this is not that approach)
         String setRes = "GOOD SET";
         String resWord = "";
 
